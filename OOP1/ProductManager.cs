@@ -10,11 +10,23 @@ namespace OOP1
         //encapsulation
         public void Add(Product product)  // (Class değişken)
         {
-            product.ProductName = "Kamera";
+            Console.WriteLine(product.ProductName + " eklendi.");
         }
-        public void BiseyYap(int sayi)
+
+        public void Update(Product product)
         {
-            sayi = 99;
+            Console.WriteLine(product.ProductName + " güncellendi.");
         }
+
+        public int Topla(int sayi1, int sayi2) // eğer başka bir yerde kullanacaksam bu sayıyı int ile yaparım. 
+        {
+            return sayi1 + sayi2;      
+        }
+
+        public void Topla2(int sayi1, int sayi2) // anlık yap bitir olacaksa void yapılır. 
+        {
+            Console.WriteLine(sayi1 + sayi2);
+        }
+
     }
 }

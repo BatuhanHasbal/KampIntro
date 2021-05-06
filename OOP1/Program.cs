@@ -25,9 +25,15 @@ namespace OOP1
             productManager.Add(product1);  //ekleyecem ama ne ekleyeceğim ? bu yüzden parametre ekliyoruz.
             Console.WriteLine(product1.ProductName);  // Answer = Kamera
 
-            int sayi = 100;
-            productManager.BiseyYap(sayi);
-            Console.WriteLine(sayi); // Answer = 100
+            productManager.Topla2(3,6);
+
+            int toplamaSonunu = productManager.Topla(3, 6);
+
+            Console.WriteLine(toplamaSonunu*2);
+
+            
+
+             
 
             
 
